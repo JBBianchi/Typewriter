@@ -32,7 +32,7 @@ namespace Typewriter.Metadata.Roslyn
                     _value = _value.Remove(_value.LastIndexOf("{", StringComparison.Ordinal), 1);
                     _value = _value.TrimEnd('}');
                 }
-
+            }
             if (_name.EndsWith("Attribute", StringComparison.OrdinalIgnoreCase))
             {
                 _name = _name.Substring(0, _name.Length - 9);
